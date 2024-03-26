@@ -56,7 +56,7 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 
 ### Materiais e Equipamentos
 
--   Retificador de onda completa de \\(12V (V\_{AC})\\) com filtro capactivo de \\(1000 \mu F\\) construído na Aula 01;
+-   Retificador de onda completa de \\(48V (V\_{AC})\\) com filtro capactivo de \\(1000 \mu F\\) construído na Aula 01;
 -   Um Diodo Zener com tensão de ruptura de \\(9 V\\);
 -   Um resistor \\(R\\) de \\(1 k\Omega\\);
 -   Um resistor \\(R\_{L}\\) de \\(3.3 k\Omega\\);
@@ -64,7 +64,7 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 
 ### Regulador de Tensão com Diodo Zener
 
-1. Carregue no Falstad um circuito retificador de tensão de onda completa com filtro capacitivo na saída. A tensão de entrada \\(V\_{AC}\\) do circuito deve ser de \\(12 V\\) e o filtro capacitivo deve ser de \\(1000 \mu F\\).
+1. Carregue no Falstad um circuito retificador de tensão de onda completa com filtro capacitivo na saída. A tensão de entrada \\(V\_{AC}\\) do circuito deve ser de \\(48 V\\) e o filtro capacitivo deve ser de \\(1000 \mu F\\).
 2. Monte o circuito apresentado na Figura 1.
     <figure markdown=1>
         ![](./img/zener.png)
