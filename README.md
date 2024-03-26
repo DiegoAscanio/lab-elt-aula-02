@@ -74,9 +74,8 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 4. Cálcule a corrente na carga, em \\(R\\) e no diodo Zener à partir das tensões medidas;
 5. Calcule a potência dissipada pelo diodo Zener;
 6. Repita o experimento, utilizando \\(R\_{L} = 1k\Omega\\). Compare os resultados obtidos.
-7. Calcule a resistência de carga mínima que “ligará” o diodo Zener:
     \\[ R_{L_{min}} = \frac{RV_{Z}}{(V_{i} - V_{Z})} \\]
-8. Preencha as tabelas abaixo para cada valor de \\(R\_{L}\\) utilizado.
+7. Preencha as tabelas abaixo para cada valor de \\(R\_{L}\\) utilizado.
 
 #### Tabela para \\(R\_{L} = 3.3 k\Omega\\)
 
