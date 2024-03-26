@@ -57,7 +57,7 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 
 ### Materiais e Equipamentos
 
-- Retificador de onda completa de \\(12V V_{AC}\\) com filtro capactivo de \\(1000 \muF\\) construído na Aula 01;
+- Retificador de onda completa de \\(12V (V_{AC})\\) com filtro capactivo de \\(1000 \mu F\\) construído na Aula 01;
 - Um Diodo Zener com tensão de ruptura de \\(9 V\\);
 - Um resistor \\(R\\) de \\(1 k\Omega\\);
 - Um resistor \\(R_{L}\\) de \\(3.3 k\Omega\\);
@@ -70,6 +70,8 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 2. Monte o circuito apresentado na Figura 1.
 
 <figure markdown=1>
+
+
 
 <figcaption>Aplicação Básica do diodo Zener. Fonte: (BENÍTEZ, 2022)</figcaption>
 </figure>
