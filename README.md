@@ -47,36 +47,72 @@ O diodo zener é um componente eletrônico similar a um diodo semicondutor norma
 
 Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo zener conduz corrente na direção normal (polarização direta) e também na direção reversa, desde que a tensão aplicada ultrapasse um valor específico, chamado de tensão de ruptura (breakdown voltage).
 
-É justamente essa característica que torna o diodo zener útil.  Ele é muito utilizado para regular tensão em circuitos eletrônicos.  Quando a tensão de entrada ultrapassa a tensão de ruptura do diodo zener, ele conduz corrente na direção reversa, dissipando o excesso de tensão e mantendo a tensão de saída praticamente constante, o que o torna apto para os seguintes usos:
+É justamente essa característica que torna o diodo zener útil. Ele é muito utilizado para regular tensão em circuitos eletrônicos. Quando a tensão de entrada ultrapassa a tensão de ruptura do diodo zener, ele conduz corrente na direção reversa, dissipando o excesso de tensão e mantendo a tensão de saída praticamente constante, o que o torna apto para os seguintes usos:
 
-- **Regulador de Tensão**: Como explicado, o diodo zener é usado para manter a tensão de saída de um circuito estabilizada, evitando variações.
-- **Circuitos Clipadores**: Nesses circuitos, o diodo zener limita a amplitude do sinal elétrico, "cortando" a parte do sinal que excede a tensão de ruptura.
-
+-   **Regulador de Tensão**: Como explicado, o diodo zener é usado para manter a tensão de saída de um circuito estabilizada, evitando variações.
+-   **Circuitos Clipadores**: Nesses circuitos, o diodo zener limita a amplitude do sinal elétrico, "cortando" a parte do sinal que excede a tensão de ruptura.
 
 ## Atividade Experimental
 
 ### Materiais e Equipamentos
 
-- Retificador de onda completa de \\(12V (V_{AC})\\) com filtro capactivo de \\(1000 \mu F\\) construído na Aula 01;
-- Um Diodo Zener com tensão de ruptura de \\(9 V\\);
-- Um resistor \\(R\\) de \\(1 k\Omega\\);
-- Um resistor \\(R_{L}\\) de \\(3.3 k\Omega\\);
-- Simulador [Falstad](https://www.falstad.com/circuit/circuitjs.html) e seus instrumentos de medidas virtuais tais quais: voltímetro, amperímetro, dentre outros;
-
+-   Retificador de onda completa de \\(12V (V\_{AC})\\) com filtro capactivo de \\(1000 \mu F\\) construído na Aula 01;
+-   Um Diodo Zener com tensão de ruptura de \\(9 V\\);
+-   Um resistor \\(R\\) de \\(1 k\Omega\\);
+-   Um resistor \\(R\_{L}\\) de \\(3.3 k\Omega\\);
+-   Simulador [Falstad](https://www.falstad.com/circuit/circuitjs.html) e seus instrumentos de medidas virtuais tais quais: voltímetro, amperímetro, dentre outros;
 
 ### Regulador de Tensão com Diodo Zener
 
-1. Carregue no Falstad um circuito retificador de tensão de onda completa com filtro capacitivo na saída. A tensão de entrada \\(V_{AC}\\) do circuito deve ser de \\(12 V\\) e o filtro capacitivo deve ser de \\(1000 \mu F\\).
+1. Carregue no Falstad um circuito retificador de tensão de onda completa com filtro capacitivo na saída. A tensão de entrada \\(V\_{AC}\\) do circuito deve ser de \\(12 V\\) e o filtro capacitivo deve ser de \\(1000 \mu F\\).
 2. Monte o circuito apresentado na Figura 1.
+    <figure markdown=1>
+        ![](./img/zener.png)
+        <figcaption>Aplicação Básica do diodo Zener. Fonte: (BENÍTEZ, 2022)</figcaption>
+    </figure>
+3. Meça a tensão contínula na carga \\(R\_{L}\\) e no resistor \\(R\\);
+4. Cálcule a corrente na carga, em \\(R\\) e no diodo Zener à partir das tensões medidas;
+5. Calcule a potência dissipada pelo diodo Zener;
+6. Repita o experimento, utilizando \\(R\_{L} = 1k\Omega\\). Compare os resultados obtidos.
+7. Calcule a resistência de carga mínima que “ligará” o diodo Zener:
+    \\[ R_{L_{min}} = \frac{RV_{Z}}{(V_{i} - V_{Z})} \\]
+8. Preencha as tabelas abaixo para cada valor de \\(R\_{L}\\) utilizado.
 
-<figure markdown=1>
+#### Tabela para \\(R\_{L} = 3.3 k\Omega\\)
 
+|                   | Valor Medido           | Valor Calculado        | Unidade |
+| ----------------- | ---------------------- | ---------------------- | ------- |
+| \\(V\_{Z}\\)      | <input type="number"/> | <input type="number"/> | V       |
+| \\(V\_{R\_{L}}\\) | <input type="number"/> | <input type="number"/> | V       |
+| \\(V\_{R}\\)      | <input type="number"/> | <input type="number"/> | V       |
+| \\(I\_{R\_{L}}\\) | <input type="number"/> | <input type="number"/> | mA      |
+| \\(I\_{R}\\)      | <input type="number"/> | <input type="number"/> | mA      |
+| \\(P\_{Z}\\)      | <input type="number"/> | <input type="number"/> | mW      |
 
+#### Tabela para \\(R\_{L} = 1 k\Omega\\)
 
-<figcaption>Aplicação Básica do diodo Zener. Fonte: (BENÍTEZ, 2022)</figcaption>
-</figure>
+|                   | Valor Medido           | Valor Calculado        | Unidade |
+| ----------------- | ---------------------- | ---------------------- | ------- |
+| \\(V\_{Z}\\)      | <input type="number"/> | <input type="number"/> | V       |
+| \\(V\_{R\_{L}}\\) | <input type="number"/> | <input type="number"/> | V       |
+| \\(V\_{R}\\)      | <input type="number"/> | <input type="number"/> | V       |
+| \\(I\_{R\_{L}}\\) | <input type="number"/> | <input type="number"/> | mA      |
+| \\(I\_{R}\\)      | <input type="number"/> | <input type="number"/> | mA      |
+| \\(P\_{Z}\\)      | <input type="number"/> | <input type="number"/> | mW      |
+
+#### Tabela para \\(R\_{L} = 500 \Omega\\)
+
+|                   | Valor Medido           | Valor Calculado        | Unidade |
+| ----------------- | ---------------------- | ---------------------- | ------- |
+| \\(V\_{Z}\\)      | <input type="number"/> | <input type="number"/> | V       |
+| \\(V\_{R\_{L}}\\) | <input type="number"/> | <input type="number"/> | V       |
+| \\(V\_{R}\\)      | <input type="number"/> | <input type="number"/> | V       |
+| \\(I\_{R\_{L}}\\) | <input type="number"/> | <input type="number"/> | mA      |
+| \\(I\_{R}\\)      | <input type="number"/> | <input type="number"/> | mA      |
+| \\(P\_{Z}\\)      | <input type="number"/> | <input type="number"/> | mW      |
+
 
 ## Referências
 
-- MALVINO, A. P.; BATES, D. J. Eletrônica-Vol. 1: 8ª Edição. [s.l.] McGraw Hill Brasil, 2016. 
-- BENÍTEZ, C. M. V. Eletrônica Geral 1 – Práticas de Laboratório. UTFPR, 2022. 
+-   MALVINO, A. P.; BATES, D. J. Eletrônica-Vol. 1: 8ª Edição. [s.l.] McGraw Hill Brasil, 2016.
+-   BENÍTEZ, C. M. V. Eletrônica Geral 1 – Práticas de Laboratório. UTFPR, 2022.
