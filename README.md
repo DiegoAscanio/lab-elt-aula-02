@@ -1,3 +1,80 @@
 <link rel="stylesheet" type="text/css" href="style.css"></link>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
-# Template para Aulas Práticas
+<script>
+    function carregarImagem(input, id) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var img = document.createElement("img");
+            img.src = e.target.result;
+            document.getElementById(id).appendChild(img);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+</script>
+
+<figure markdown=1>
+
+![logo](https://upload.wikimedia.org/wikipedia/commons/f/fd/Logo_CEFET-MG.png)
+
+<figcaption>CEFET-MG — Centro Federal de Educação Tecnológica de Minas Gerais</figcaption>
+</figure>
+
+DEPARTAMENTO DE COMPUTAÇÃO DE DIVINÓPOLIS — DECOM-DV
+
+Laboratório de Eletrônica
+
+Turma: 2024/1
+
+Prof. M. Sc. Diego Ascânio Santos
+
+<label for="alunos">Alunos: </label>
+<input type="text" id="alunos" name="alunos" size="80" >
+
+<label for="data">Data: </label>
+<input type="date" id="data" name="data">
+
+# Aula Prática 02 — Regulador de Tensão com Diodo Zener
+
+## Conceitos Teóricos
+
+### Diodo Zener
+
+O diodo zener é um componente eletrônico similar a um diodo semicondutor normal, mas projetado para funcionar de maneira diferente: em operação intencional na região de ruptura para permitir o fluxo contrário de corrente (MALVINO; BATES, 2016)
+
+Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo zener conduz corrente na direção normal (polarização direta) e também na direção reversa, desde que a tensão aplicada ultrapasse um valor específico, chamado de tensão de ruptura (breakdown voltage).
+
+É justamente essa característica que torna o diodo zener útil.  Ele é muito utilizado para regular tensão em circuitos eletrônicos.  Quando a tensão de entrada ultrapassa a tensão de ruptura do diodo zener, ele conduz corrente na direção reversa, dissipando o excesso de tensão e mantendo a tensão de saída praticamente constante, o que o torna apto para os seguintes usos:
+
+- **Regulador de Tensão**: Como explicado, o diodo zener é usado para manter a tensão de saída de um circuito estabilizada, evitando variações.
+- **Circuitos Clipadores**: Nesses circuitos, o diodo zener limita a amplitude do sinal elétrico, "cortando" a parte do sinal que excede a tensão de ruptura.
+
+
+## Atividade Experimental
+
+### Materiais e Equipamentos
+
+- Retificador de onda completa de \\(12V V_{AC}\\) com filtro capactivo de \\(1000 \muF\\) construído na Aula 01;
+- Um Diodo Zener com tensão de ruptura de \\(9 V\\);
+- Um resistor \\(R\\) de \\(1 k\Omega\\);
+- Um resistor \\(R_{L}\\) de \\(3.3 k\Omega\\);
+- Simulador [Falstad](https://www.falstad.com/circuit/circuitjs.html) e seus instrumentos de medidas virtuais tais quais: voltímetro, amperímetro, dentre outros;
+
+
+### Regulador de Tensão com Diodo Zener
+
+1. Carregue no Falstad um circuito retificador de tensão de onda completa com filtro capacitivo na saída. A tensão de entrada \\(V_{AC}\\) do circuito deve ser de \\(12 V\\) e o filtro capacitivo deve ser de \\(1000 \mu F\\).
+2. Monte o circuito apresentado na Figura 1.
+
+<figure markdown=1>
+
+<figcaption>Aplicação Básica do diodo Zener. Fonte: (BENÍTEZ, 2022)</figcaption>
+</figure>
+
+## Referências
+
+- MALVINO, A. P.; BATES, D. J. Eletrônica-Vol. 1: 8ª Edição. [s.l.] McGraw Hill Brasil, 2016. 
+- BENÍTEZ, C. M. V. Eletrônica Geral 1 – Práticas de Laboratório. UTFPR, 2022. 
