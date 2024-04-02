@@ -110,6 +110,23 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 | \\(I\_{R}\\)      | <input type="number"/> | <input type="number"/> | mA      |
 | \\(P\_{Z}\\)      | <input type="number"/> | <input type="number"/> | mW      |
 
+## Formulários
+
+- Corrente do Zener sem carga \\(R_{L}\\):
+    \\[ I_{Z} = \frac{V_{i} - V_{Z}}{R} \\]
+- Corrente do Zener com carga:
+    - Corrente do resistor \\(R\\):
+        \\[ I_{R} = \frac{V_{i} - V_{Z}}{R} \\]
+    - Corrente do resistor \\(R_{L}\\):
+        \\[ I_{R_{L}} = \frac{V_{Z}}{R_{L}} \\]
+    - Corrente do Zener:
+        \\[ I_{Z} = I_{R} - I_{R_{L}} \\]
+- Tensão de Zener sem carga \\(R_{L}\\):
+    \\[ V_{Z} = V_{i} - I_{Z}R \\]
+- Tensão de Zener com carga:
+    \\[ V_{Z} = V_{R_{L}} = {\frac{R_{L}}{R_{S} + R_{L}} \times V_{i}} \\]
+- Potência dissipada pelo Zener:
+    \\[ P_{Z} = V_{Z} \times I_{Z} \\]
 
 ## Referências
 
