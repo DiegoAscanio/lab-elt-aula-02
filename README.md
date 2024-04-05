@@ -124,7 +124,9 @@ Diferente de um diodo comum, que só conduz corrente em uma direção, o diodo z
 - Tensão de Zener sem carga \\(R_{L}\\):
     \\[ V_{Z} = V_{i} - I_{Z}R \\]
 - Tensão de Zener com carga:
-    \\[ V_{Z} = V_{R_{L}} = {\frac{R_{L}}{R_{S} + R_{L}} \times V_{i}} \\]
+    \\[ V_{Z} = V_{R_{L}} = R_{L} \times I_{L} \\]
+- Excedente da tensão de zener com carga:
+    \\[ V_{\text{excedente}_Z} = {\frac{R_{L}}{R_{S} + R_{L}} \times V_{i}} \\]
 - Potência dissipada pelo Zener:
     \\[ P_{Z} = V_{Z} \times I_{Z} \\]
 
